@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <title>Instagram Photo Feed</title>
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-light bg-light">
+            <span class="navbar-brand mb-0 ml-5 h1"><i class="fab fa-instagram"></i> Instagram</span>
+            <form class="form-inline">
+                <button data-toggle="modal" data-target="#exampleModal" class="btn btn-success" 
+                type="button">Post</button>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" 
+                    aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-cog"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="#">Accion</a>
+                        <a class="dropdown-item" href="#">Otra accion</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Cerrar sesión</a>
+                    </div>
+                </div>
+            </form>
+        </nav>
+        <!-- Buttons -->
+        <nav aria-label="Page navigation example" class="margen">
+            <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link text-secondary" href="index.html">
+                    <i class="fas fa-th"></i></a>
+                </li>
+                <li class="page-item"><a class="page-link text-secondary" href="feed.html">■</a></li>
+            </ul>
+        </nav>
+        <!-- Images -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col px-0 ml-1">
+                    <img class="feed-img" src="https://images.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                </div>
+                <div class="col px-0">
+                    <img class="feed-img" src="https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                </div>
+                <div class="col px-0">
+                    <img class="feed-img" src="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid seg-ter">
+            <div class="row">
+                <div class="col px-0 ml-1">
+                    <img class="feed-img" src="https://images.pexels.com/photos/774731/pexels-photo-774731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                </div>
+                <div class="col px-0">
+                    <img class="feed-img" src="https://images.pexels.com/photos/2194261/pexels-photo-2194261.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                </div>
+                <div class="col px-0">
+                    <img class="feed-img" src="https://images.pexels.com/photos/126407/pexels-photo-126407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid seg-ter">
+            <div class="row">
+                <div class="col px-0 ml-1">
+                    <img class="feed-img" src="https://images.pexels.com/photos/1472999/pexels-photo-1472999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                </div>
+                <div class="col px-0">
+                    <img class="feed-img" src="https://images.pexels.com/photos/257532/pexels-photo-257532.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                </div>
+                <div class="col px-0">
+                    <img class="feed-img" src="https://images.pexels.com/photos/33537/cat-animal-cat-portrait-mackerel.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                </div>
+            </div>
+        </div>
+        <!--Modal-->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-light btn-sm">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                        <button type="button" class="btn btn-light btn-sm">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </button>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-success">Publicar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/fd4b9d596c.js" crossorigin="anonymous"></script>
+  </body>
+</html>
